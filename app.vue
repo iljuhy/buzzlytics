@@ -1,5 +1,38 @@
+<script setup lang="ts">
+
+useSeoMeta({
+  title: 'Buzzlytics',
+  ogTitle: 'Buzzlytics',
+  description: 'Buzzlytics description.',
+  ogDescription: 'Buzzlytics description.',
+  ogImage: ''
+})
+</script>
+
+
 <template>
   <div>
-    <NuxtWelcome />
+    <div class="page">
+
+      <header class="header">
+        <NuxtLink to="/">
+          <img class="img" src="@/assets/images/logo.svg"/>
+        </NuxtLink>
+        <div class="right">
+          <div class="text">Register</div>
+          <button class="button">Log In</button>
+        </div>
+      </header>
+
+      <NuxtPage />
+      
+      <!-- <NuxtLink to="/about">About</NuxtLink>
+      <NuxtLink to="/">Home</NuxtLink> -->
+    </div>
   </div>
 </template>
+
+
+<style>
+@import '@/assets/styles/main.scss';
+</style>

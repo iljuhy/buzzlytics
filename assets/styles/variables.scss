@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Gilroy-Semibold';
+    src: url('~/assets/fonts/Gilroy-Semibold.woff');
+}
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('~/assets/fonts/Gilroy-Bold.woff');
+}
+
+$color-black: #000;
+$color-white: #fff;
+$color-red: #EA3323;
+$color-gray-dark: #A7CBC3;
+$color-gray: rgba(96, 166, 149, .5);
+$font-main-semibold: 'Gilroy-Semibold';
+$font-main-bold: 'Gilroy-Bold';
+$font-small: 'Outfit', sans-serif;
+
+

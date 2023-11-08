@@ -1,0 +1,65 @@
+@import './variables.scss';
+@import './reset.scss';
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: $font-main-semibold;
+}
+.wrapper {
+  max-width: 1088px;
+  margin: 0 auto;
+}
+.section {
+  padding: 0 22px;
+}
+.title {
+  font-size: 50px;
+  font-family: $font-main-bold;
+  color: $color-black;
+  line-height: normal;
+}
+.text {
+  font-size: 20px;
+  font-family: $font-main-semibold;
+  color: $color-black;
+  line-height: normal;
+}
+.button {
+  border: 0;
+  border-radius: 200px;
+  color: $color-white;
+  background: $color-black;
+  font-size: 14px;
+  padding: 12px;
+  height: 56px;
+  cursor: pointer;
+  transition: .3s;
+  min-width: 132px;
+}
+a {
+  transition: .3s;
+}
+.button:hover,
+a:hover {
+  opacity: .7;
+}
+.header {
+  padding: 29px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+
+  .logo {
+    width: 130px;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+  }
+}
