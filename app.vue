@@ -15,7 +15,7 @@ useSeoMeta({
     <div class="page">
 
       <header class="header">
-        <NuxtLink to="/">
+        <NuxtLink class="logo" to="/">
           <img class="img" src="@/assets/images/logo.svg"/>
         </NuxtLink>
         <div class="right">
@@ -25,7 +25,7 @@ useSeoMeta({
       </header>
 
       <NuxtPage />
-      
+
       <!-- <NuxtLink to="/about">About</NuxtLink>
       <NuxtLink to="/">Home</NuxtLink> -->
     </div>
