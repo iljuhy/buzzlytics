@@ -6,6 +6,10 @@
 }
 body {
   font-family: $font-main-semibold;
+  background: #EEF1F0;
+}
+.page {
+  overflow: hidden;
 }
 .wrapper {
   max-width: 1088px;
@@ -37,6 +41,8 @@ body {
   cursor: pointer;
   transition: .3s;
   min-width: 132px;
+  position: relative;
+  z-index: 1;
 }
 a {
   transition: .3s;
@@ -44,6 +50,9 @@ a {
 .button:hover,
 a:hover {
   opacity: .7;
+}
+.mob {
+  display: none;
 }
 .header {
   padding: 29px 22px;
@@ -64,10 +73,36 @@ a:hover {
   }
 }
 
-
 @media screen and (max-width: 768px) {
+  .mob {
+    display: block;
+  }
+  .text {
+    font-size: 16px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .page {
+    display: flex;
+    flex-direction: column;
+  }
   .logo {
     width: 24px;
     overflow: hidden;
+  }
+  .header {
+    padding: 20px 22px;
+
+    .button {
+      min-width: 87px;
+      height: 39px;
+    }
+    .right {
+      gap: 24px;
+    }
+    .text {
+      font-size: 14px;
+    }
   }
 }

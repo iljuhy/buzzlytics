@@ -86,6 +86,7 @@
   <div class="features section">
     <div class="wrapper">
       <img class="decor4" src="@/assets/images/decor4.svg"/>
+      <div class="title mob">Features</div>
       <div class="list">
         <div class="item">
           <img class="img" src="@/assets/images/feature1.svg"/>
