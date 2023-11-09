@@ -25,9 +25,7 @@ useSeoMeta({
       </header>
 
       <NuxtPage />
-
-      <!-- <NuxtLink to="/about">About</NuxtLink>
-      <NuxtLink to="/">Home</NuxtLink> -->
+      
     </div>
   </div>
 </template>

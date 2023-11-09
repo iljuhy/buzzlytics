@@ -186,10 +186,10 @@
     <div class="wrapper">
       <ul class="list">
         <li class="item">
-          <NuxtLink to="/" class="text">Terms of Service</NuxtLink>
+          <NuxtLink to="/terms" class="text">Terms of Service</NuxtLink>
         </li>
         <li class="item">
-          <NuxtLink to="/" class="text">Privacy Policy</NuxtLink>
+          <NuxtLink to="/privacy" class="text">Privacy Policy</NuxtLink>
         </li>
         <li class="item">
           <a class="text" href="mailto:support@gmail.com">Support</a>
