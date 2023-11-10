@@ -13,5 +13,6 @@ export default defineNuxtConfig({
           Outfit: [400]
         }
     }],
+    '@pinia/nuxt',
   ],
 })

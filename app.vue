@@ -7,6 +7,12 @@ useSeoMeta({
   ogDescription: 'Buzzlytics description.',
   ogImage: ''
 })
+
+import SignInModal from '@/components/signInModal.vue'
+import RegisterModal from '@/components/registerModal.vue'
+import{useModalsToggle} from '@/stores/modalsToggle'
+const store = useModalsToggle()
+
 </script>
 
 
@@ -19,12 +25,25 @@ useSeoMeta({
           <img class="img" src="@/assets/images/logo.svg"/>
         </NuxtLink>
         <div class="right">
-          <div class="text">Register</div>
-          <button class="button">Log In</button>
+          <div class="text hover-link" @click="store.openRegisterModal">Register</div>
+          <button class="button" @click="store.openSignInModal">Log In</button>
         </div>
       </header>
 
       <NuxtPage />
+      
+      <transition name="fade">
+        <signInModal v-if="store.signInModalIsVisible" />
+      </transition>
+      <transition name="fade">
+        <registerModal v-if="store.registerModalIsVisible" />
+      </transition>
+      <transition name="fade">
+        <restoreModal v-if="store.restoreModalIsVisible" />
+      </transition>
+      <transition name="fade">
+        <restoreSuccessModal v-if="store.restoreSuccessModalIsVisible" />
+      </transition>
       
     </div>
   </div>

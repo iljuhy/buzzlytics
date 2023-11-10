@@ -532,11 +532,25 @@
           font-size: 20px;
         }
         &::before {
-          left: 60%;
-          top: 20%;
+          background-image: url('~/assets/images/hero-bg-mob.svg');
+          left: 20%;
+          top: 10%;
           transform: translate(-50%, -50%);
-          width: 687px;
-          height: 656px;
+          width: 587px;
+          height: 856px;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          width: 487px;
+          height: 786px;
+          background-image: url('~/assets/images/hero-bg2.svg');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
         }
         .cta {
 

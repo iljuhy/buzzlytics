@@ -1,3 +1,7 @@
+<script setup lang="ts">
+  import{useModalsToggle} from '../stores/modalsToggle'
+  const store = useModalsToggle()
+</script>
 <template>
   <div class="hero section">
     <div class="wrapper">
@@ -139,7 +143,7 @@
               </li>
             </ul>
           </div>
-          <button class="button">Join for Free</button>
+          <button class="button" @click="store.openRegisterModal">Join for Free</button>
         </div>
         <div class="item">
           <div class="top">
@@ -170,7 +174,7 @@
               </li>
             </ul>
           </div>
-          <button class="button">Subscribe</button>
+          <button class="button" @click="store.openSignInModal">Subscribe</button>
         </div>
       </div>
     </div>
